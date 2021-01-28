@@ -3,12 +3,18 @@
     min-height: 0cm;
     max-height: 300cm;
     display: flex;
-    height: 300cm;
+    height: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding-top: 31vh;
+    padding-bottom: 31vh;
     font-size: calc(10px + 2vmin);
     color: white;
+}
+
+.Main {
+    text-align: center;
 }
 
 .Nav-header {
@@ -24,10 +30,6 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-}
-
-.Main {
-    text-align: center;
 }
 
 .Nav {
@@ -50,11 +52,33 @@
 }
 
 .navbar a:hover {
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid whitesmoke;
     padding: 5px 25px 0px;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
+.Project-header {
+    background-color: #282c34;
+    min-height: 0cm;
+    max-height: 300cm;
+    display: flex;
+    height: fit-content;
+    padding-left: 25vh;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Card {
+    background-color: white;
+    min-height: 0cm;
+    max-height: 300cm;
+    display: flex;
+    height: 10cm;
+    width: 30cm;
+    padding-left: 50vh;
+    flex-direction: column;
+}
+
+.Project {
+    text-align: left;
+}
