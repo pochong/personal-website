@@ -62,21 +62,10 @@
     max-height: 300cm;
     display: flex;
     height: fit-content;
-    padding-left: 25vh;
+    padding-left: 15vh;
     flex-direction: column;
     font-size: calc(10px + 2vmin);
     color: white;
-}
-
-.Card {
-    background-color: white;
-    min-height: 0cm;
-    max-height: 300cm;
-    display: flex;
-    height: 10cm;
-    width: 30cm;
-    padding-left: 50vh;
-    flex-direction: column;
 }
 
 .Project {
