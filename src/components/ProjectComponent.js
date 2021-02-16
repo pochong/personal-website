@@ -1,7 +1,7 @@
 import React from 'react';
 import './Components.css';
 import { PROJECTS } from '../shared/projects'
-import { Card, CardActions, CardContent, Button, Typography, makeStyles, CardMedia } from '@material-ui/core'
+import { Card, CardActions, CardContent, Button, Typography, makeStyles, CardMedia, IconButton } from '@material-ui/core'
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles({
@@ -10,20 +10,21 @@ const useStyles = makeStyles({
         backgroundColor: 'white',
         height: 'fit-content',
         width: 'fit-content',
-        minWidth: '100vh',
-        maxWidth: '150vh',
-        marginLeft: '30vh',
+        minWidth: '150vh',
+        maxWidth: '175vh',
+        marginLeft: '10vh',
         paddingLeft: 50,
         paddingTop: '20px',
         borderRadius: '25px',
         flexDirection: 'column'
     },
     img: {
-        height: '125mm',
-        width: '125mm'
+        height: 125,
+        width: '60vh',
+        paddingTop: '56.25%',
+        objectFit: 'fit',
     },
     content: {
-        display: 'block',
         flex: '1 0 auto',
         marginLeft: '25px',
         width: '50vh',
@@ -37,19 +38,19 @@ const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'row',
         marginTop: 'auto',
-        marginLeft: 'auto'
+        marginLeft: 'auto',
     },
     body_col: {
-        display: 'flex',
         flexDirection: 'column'
     }
 })
 
 function Project() {
     return (
-        <div className="Project-header">
-            <div className="Project" >
-                <h2>My Projects</h2>
+        <div className="Project-header" id="project">
+            <p></p>
+            <div className="Project">
+                <h1>My Projects</h1>
             </div>
             <div>
                 <RenderCardProject />
@@ -83,7 +84,7 @@ function RenderCardProject() {
                             <Typography variant="h3">
                                 {project.name}
                             </Typography>
-                            <CardMedia className={classes.img} component='img' title="Automatic Litter Box" image={project.image} />
+                            <CardMedia className={classes.img} src="img" title={project.name} image={project.image} />
                         </div>
                         <CardContent className={classes.content}>
                             <Typography variant='h4' >
@@ -91,15 +92,11 @@ function RenderCardProject() {
                                     <RenderDescription project={project.description} />
                                 </ul>
                             </Typography>
-                            <div className={classes.button}>
-                                <Button startIcon={<GitHubIcon />} size='large' href={project.github}></Button>
-                                <Button startIcon={<GitHubIcon />} size='large' href={project.github}></Button>
-                                <Button startIcon={<GitHubIcon />} size='large' href={project.github}></Button>
-                            </div>
                         </CardContent>
-
+                        <div className={classes.button}>
+                            <IconButton color='inherit' size='large' href={project.github}><GitHubIcon fontSize="large" /></IconButton>
+                        </div>
                     </div>
-
                 </Card>
                 <p></p>
             </div >

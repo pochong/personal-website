@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 31vh;
-    padding-bottom: 31vh;
+    padding-bottom: 45vh;
     font-size: calc(10px + 2vmin);
     color: white;
 }
@@ -57,7 +57,7 @@
 }
 
 .Project-header {
-    background-color: #282c34;
+    background-color: #03276e;
     min-height: 0cm;
     max-height: 300cm;
     display: flex;
@@ -70,4 +70,25 @@
 
 .Project {
     text-align: left;
+}
+
+.Contact {
+    display: flex;
+    background-color: #03276e;
+    padding-left: 15vh;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    text-align: center;
+    color: white;
+    white-space: wrap;
+    padding-right: 12vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }

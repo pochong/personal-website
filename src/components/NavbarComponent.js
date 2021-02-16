@@ -5,9 +5,9 @@ function Navbar() {
     return (
         <div className="Nav-header">
             <ul className="Nav">
-                <li className="navbar"><a>Home</a></li>
-                <li className="navbar"><a>Project</a></li>
-                <li className="navbar"><a>About</a></li>
+                <li className="navbar"><a href="#main">Home</a></li>
+                <li className="navbar"><a href="#project">Project</a></li>
+                <li className="navbar"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     );
