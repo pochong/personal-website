@@ -13,6 +13,7 @@ const useStyles = makeStyles({
         minWidth: '150vh',
         maxWidth: '175vh',
         marginLeft: '10vh',
+        maxHeight: 650,
         paddingLeft: 50,
         paddingTop: '20px',
         borderRadius: '25px',
@@ -22,7 +23,7 @@ const useStyles = makeStyles({
         height: 125,
         width: '60vh',
         paddingTop: '56.25%',
-        objectFit: 'fit',
+        objectFit: 'cover',
     },
     content: {
         flex: '1 0 auto',
@@ -72,6 +73,18 @@ function RenderDescription({ project }) {
     )
 }
 
+function RenderButton({link}) {
+    if(link != "") {
+        return (
+            <IconButton color='inherit' size='large' target="_blank" href={link}><GitHubIcon fontSize="large" /></IconButton>
+        )
+    } else {
+        return (
+            <div></div>
+        )
+    }
+}
+
 function RenderCardProject() {
     const classes = useStyles();
 
@@ -94,7 +107,8 @@ function RenderCardProject() {
                             </Typography>
                         </CardContent>
                         <div className={classes.button}>
-                            <IconButton color='inherit' size='large' href={project.github}><GitHubIcon fontSize="large" /></IconButton>
+                            {/* <IconButton color='inherit' size='large' target="_blank" href={project.github}><GitHubIcon fontSize="large" /></IconButton> */}
+                            <RenderButton link={project.github} />
                         </div>
                     </div>
                 </Card>

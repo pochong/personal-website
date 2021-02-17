@@ -3,12 +3,12 @@ export const PROJECTS =
     {
         id:0,
         name: "Website",
-        image: '/images/pika.jpg',
+        image: '/images/website.png',
         description: {
             1: "Designed a personal website with React using React hook",
             2: "Used CSS and material-UI to design the interactive webiste"
         },
-        github: "git hub"
+        github: "https://github.com/pochong/personal-website"
     },
     {
         id:1,
@@ -26,33 +26,33 @@ export const PROJECTS =
     {
         id:2,
         name: "CampusFoodBuddy",
-        image: '/images/pika.jpg',
+        image: '/images/CampusFoodBuddy.png',
         description: {
             1: "Designed and developed a Java based mobile app with Android Studio to display the daily changing menus of multiple dining halls",
             2: "Used web scraping and Google Map API to direct users to the dining halls",
             3: "Operated as Scrum Master: delegating tasks, facilitating meetings, and addressing team dynamics"
         },
-        github: "git hub"
+        github: "https://github.com/KevinRNelson/CampusFoodBuddy"
     },
     {
         id:3,
         name: "Oscilloscope",
-        image: '/images/pika.jpg',
+        image: '/images/Oscilloscope.jpg',
         description: {
             1: "Simulated an oscilloscope using C with OpenVG for signal processing and displaying the resulted waveforms",
             2: "Set up I2C and USB communication between PsoC and Raspberry Pi with wiringPi and libusb library respectively",
             3: "Resolved data transfer issues between the two hardware components such as data losses, voltage differences, wire connections, etc."
         },
-        github: "git hub"
+        github: ""
     },
-    {
-        id:4,
-        name: "Slug Cross",
-        image: '/images/pika.jpg',
-        description: {
-            1: "Created a simple road cross game utilizing a FPGA as the controller and configuration",
-            2: "Designed the state machine for the scores and obstacles"
-        },
-        github: "git hub"
-    }
+    // {
+    //     id:4,
+    //     name: "Slug Cross",
+    //     image: '/images/pika.jpg',
+    //     description: {
+    //         1: "Created a simple road cross game utilizing a FPGA as the controller and configuration",
+    //         2: "Designed the state machine for the scores and obstacles"
+    //     },
+    //     github: ""
+    // }
 ];
